@@ -1,0 +1,46 @@
+.flowchart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px; /* Adjust width as needed */
+  margin: 0 auto; /* Center flowchart horizontally */
+}
+
+.flowchart-level {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px; /* Adjust height as needed */
+  margin-bottom: 10px; /* Adjust spacing between levels */
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.flowchart-level.active {
+  background-color: #eee; /* Optional background for active level */
+}
+
+.flowchart-node {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin: 0 10px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.flowchart-square {
+  background-color: #333; /* Change color for square node */
+}
+
+.flowchart-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* Change text color for circle node */
+  font-weight: bold;
+}
+
+.flowchart-level:hover .flowchart-node {
+  background-color: #bbb; /* Optional hover effect for nodes */
+}
